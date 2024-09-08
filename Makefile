@@ -1,6 +1,7 @@
 build:
-	go build -o bin/myBlog ./cmd/myBlog.go
+	@go build -o bin/myBlog ./cmd/myBlog.go
 
 run: build
-	bin/myBlog
+	@bin/myBlog
+	echo "Server is running..."
 
