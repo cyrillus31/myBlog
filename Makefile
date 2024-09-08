@@ -1,7 +1,9 @@
+include .env
+
 build:
-	@go build -o bin/myBlog ./cmd/myBlog.go
+	@go build -o bin/myBlog ./cmd;
 
 run: build
-	@bin/myBlog
-	echo "Server is running..."
+	@echo "Server is running on http://${APP_HOST}:${APP_PORT}";
+	@bin/myBlog;
 
